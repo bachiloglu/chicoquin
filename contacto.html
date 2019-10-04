@@ -1,72 +1,76 @@
 <html>
-    <head>
-            <meta charset="UTF-8">
-            <title>Chicoquin</title>
-            <link rel="stylesheet" type="text/css" href="estilos.css">
 
-    </head>
-    <body>
-            
-                    <a id="logo" href="index.html"><img src="img/logo.png"></img></a></li>
-              
-                    <ul>
-                        <li><a class="active" href="contacto.html">Contacto</a></li>
-                        <li><a href="about.html">Sobre mí</a></li>
-                        <li><a href="index.html">Portafolio</a></li>
-                        
-                    </ul>
+<head>
+    <meta charset="UTF-8">
+    <title>Chicoquin</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 
-                    <!--Contenido específico-->
-                    <div id="containerDos">
-                    <h2>HABLEMOS!</h2>
-                
-        
-                            <form action="/action_page.php">
-                              <label id="nombre-c" class="semibold" for="nombre">NOMBRE</label>
-                              <br>
-                              <input type="text" id="name" name="nombre" placeholder="Escribe tu nombre...">
-                              
-                              <br>
-                              <label id="correo-c" class="semibold" for="mail">CORREO</label>
-                              <br>
-                              <input type="text" id="correo" name="correo" placeholder="Escribe tu correo...">
-                              <br>
+</head>
 
-                              
-                              <label id="telefono-c" class="semibold" for="telefono">TELÉFONO</label>
-                              <br>
-                              <input type="text" id="telefono" name="telefono" placeholder="Escribe tu teléfono...">
-                              <br>
-                            
-                          
-                              <label id="mensaje-c"  class="semibold" for="mensaje">MENSAJE</label>
-                              <br>
-                              <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." style="height:100px"></textarea>
-                              <br>
-                          
-                              <input type="submit" value="ENVIAR">
-                            </form>
-                          </div>
+<body>
+
+    <a id="logo" href="index.html"><img src="img/logo.png"></img></a></li>
+    <!--'ul' es 'unordered list', que puede contener elementos de lista 'li'-->
+
+    <ul>
+        <!--la class active es para que la barra de navegación indique en qué sección de la página estamos-->
+        <li><a class="active" href="contacto.html">Contacto</a></li>
+        <li><a href="about.html">Sobre mí</a></li>
+        <li><a href="index.html">Portafolio</a></li>
+
+    </ul>
+
+    <!--Contenido específico-->
+    <!--Los contenedores son para contener (obvio), lo que sigue. Sirven para estrcuturar el contenido dentro de "cajas".-->
+    <div id="containerDos">
+        <h2>HABLEMOS!</h2>
+
+        <!--Aquí el formulario-->
+        <form>
+            <!--Estos labels van juntos para dejar en la misma línea nombre y correo-->
+            <label id="nombre-c" class="semibold" for="nombre">NOMBRE</label>
+            <label id="correo-c" class="semibold" style="padding-left:30.8%;" for="mail">CORREO</label>
+            <br> <!--br son saltos de línea-->
+            <input type="text" id="name" name="nombre" style="width:35%;" placeholder="Escribe tu nombre...">
+            <input type="text" id="correo" name="correo" style="width:35%;" placeholder="Escribe tu correo...">
+       
+            <br>
+            <!-- los id son para elemento ÚNICOS E IRREPETIBLES, las clases para varios elementos que puedan tener los mismo estilos-->
+            <label id="telefono-c" class="semibold" for="telefono">TELÉFONO</label>
+            <br>
+            <input type="text" id="telefono" name="telefono" placeholder="Escribe tu teléfono...">
+            <br>
 
 
+            <label id="mensaje-c" class="semibold" for="mensaje">MENSAJE</label>
+            <br>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." style="height:100px"></textarea>
+            <br>
+            <input type="submit" value="ENVIAR">
+        </form>
+    </div>
 
-                    <div class="footer">
-                            <img src="img/separador.png">
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <a class="abajo" href="https://instagram.com/"><img src="img/ig.png" alt=""></a>
-                            <a class="abajo" href="https://instagram.com/"><img src="img/tumblr.png" alt=""></a>
-                            <a class="abajo" href="https://instagram.com/"><img src="img/behance.png" alt=""></a>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <a href="https://instagram.com/"><img src="img/logo.png" alt=""></a>
-                            
-                    </div>
-            
-    </body>
+
+    <!--El footer se puede hacer con <footer></footer> o con un div, como lo hice aquí. El primer básicamente es un div con otro nombre de etiqueta-->
+    <div class="footer">
+        <img src="img/separador.png">
+        <br>
+        <br>
+        <br>
+        <br>
+        <a class="abajo" href="https://instagram.com/chicoquin"><img src="img/ig.png" alt=""></a>
+        <!--Para que las imágenes tengan links, es necesario anteceder la etiqueta 'img' con una etiqueta 'a'-->
+        <a class="abajo" href="https://chicoquin.tumblr.com/"><img src="img/tumblr.png" alt=""></a>
+        <a class="abajo" href="https://behance.net/chicoquin"><img src="img/behance.png" alt=""></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a><img src="img/logo.png" alt=""></a>
+
+    </div>
+
+</body>
+
 </html>

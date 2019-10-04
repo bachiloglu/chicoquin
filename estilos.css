@@ -1,32 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
 
-
-body{
+/*Los estilos de body son para acomodar el documento completo. Margin, es para que no genero un margen automático.*/
+body {
     margin: 0 auto;
-    margin-top:2%;
+    margin-top: 2%;
     font-family: 'Be Vietnam', sans-serif;
 }
+/*Aquí le decimos al primer contenedor que use todo el ancho de la pantalla y en un 10% de su alto.*/
 #container {
     width: 100%;
-    display: block;
     height: 10%;
     padding-bottom: 10%;
 }
+/*Aquí le decimos cómo disponerse a los elementos de la lista*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     margin-right: 10%;
-    
+
     display: block;
-  }
+}
 
 #logo {
     float: left;
     margin-left: 10%;
 }
-
-li a{
+/*Aquí le decimos a cada elemento de texto que se formatee*/
+li a {
 
     margin-top: 2%;
     margin-left: 5%;
@@ -40,117 +41,109 @@ li a{
     color: black;
     transition-property: color;
 }
-
+/*Y agregamos una pequeña transición de color para cuando el mouse se ponga encima de una sección NO ACTIVA*/
 li a:hover:not(.active) {
     color: #F7B843;
     transition-property: color;
-    transition-duration: 0.4s; 
-  }
-  
-  .active {
+    transition-duration: 0.4s;
+}
+
+.active {
     color: #E75151;
-  }
+}
 
-
-  .footer {
+/*Aquí van los estilos del footer. El primero es para que se separe del contenido particular de cada página*/
+.footer {
     padding: 200 0 0 0;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
     text-align: center;
- }
-
- #bajar {
-    padding-top: 70px;
- }
-
- .abajo:not(:first-of-type) {
-    margin-left: 7%;
 }
 
-#portafolio{
+/*Aquí le digo a todos los íconos de RRSS excepto el primero, que tengan un margen desde la izquierda de un 7%*/
+.abajo:not(:first-of-type) {
+    margin-left: 7%;
+}
+/*Centro las fotitos*/
+#portafolio {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
+/*Los cuatro siguiente estilos son para manejar el tamaño de las imágenes y que no se desordenen*/
+div.gallery img {
     width: 100%;
     height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
+}
+
+
+* {
     box-sizing: border-box;
-  }
-  
-  .responsive {
+}
+
+.responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
-  }
-  
-  
-  .clearfix:after {
+}
+
+
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
+
+/*Aquí terminan los estilos del portafolio y empiezan los del about*/
+/*Aquí contenemos dos contenedores. Uno para la imágen y otra para el texto.*/
 #contenedor {
     margin-top: 5%;
-      float: left;
-      margin-left: 10%;
-      margin-right: 10%;
-      padding-bottom: 10%;
-}
-
-#izquierda{
     float: left;
     margin-left: 10%;
-    margin-top:5%;
+    margin-right: 10%;
+    padding-bottom: 10%;
 }
 
-#derecha{
+#izquierda {
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#derecha {
     float: left;
     width: 30%;
     margin-left: 5%;
 }
-
-h2{
+/*Los font-weight son para darle peso a la tipografía. En GoogleFonts sale el peso en número al lado de su correspondiente peso textual. Por ejemplo Extrabold 800*/
+h2 {
     font-weight: 800;
 }
 
-
-#containerDos{
+/*Aquí terminan los estilos del about y empiezan los del formulario*/
+#containerDos {
     margin-left: 22%;
     padding-top: 10%;
 }
 
-
-input[type=text], select, textarea {
+/*Aquí le decimos que el input es de tipo texto, y a los rectángulos, dale ciertas propiedades.*/
+input[type=text],
+select,
+textarea {
+    background-color: #E6E6E6;
     width: 70%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 18px;
+    border: none;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
+    margin-top: 12px;
+    margin-bottom: 30px;
+
+}
+/*Al botón de enviar dale estas propiedades*/
+input[type=submit] {
     background-color: black;
     color: white;
     border: none;
@@ -158,30 +151,30 @@ input[type=text], select, textarea {
     cursor: pointer;
     width: 200px;
     height: 50px;
-  }
-  
-  input[type=submit]:hover {
+}
+/*Cuando estés sobre el botón de enviar cambia el color con una transición*/
+input[type=submit]:hover {
     background-color: #F7B843;
     transition-property: background-color;
-    transition-duration: 0.4s; 
-  }
-
-#nombre-c{
+    transition-duration: 0.4s;
+}
+/*El color para cada título del formulario*/
+#nombre-c {
     color: #E75151;
 }
 
-#correo-c{
+#correo-c {
     color: #F7B843;
 }
 
-#telefono-c{
+#telefono-c {
     color: #138B70;
 }
 
-#mensaje-c{
+#mensaje-c {
     color: #22519E;
 }
 
-.semibold{
+.semibold {
     font-weight: 600;
 }
