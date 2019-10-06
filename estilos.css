@@ -73,10 +73,10 @@ li a:hover:not(.active) {
 
 /*con el width ajustamos el ancho y le damos un poco de margen para que quede todo centrado. El display es la forma en que se distribuyen las imágenes y flex es una propiedad que las hace ser flexibles*/
 #portafolio {
-    width: 90%;
-    margin-left: 10%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 
 
 }
@@ -84,8 +84,8 @@ li a:hover:not(.active) {
 /*Aquí ajustamos cantidad de columnas con el porcentaje*/
 .column {
     flex: 25%;
-    max-width: 20%;
-    padding: 0 4px;
+    max-width: 23%;
+    padding: 0 1%;
 }
 
 .column img {
@@ -143,7 +143,7 @@ li a:hover:not(.active) {
 
 
 
-
+/*cositas de animación, pero nada muy complicado*/
 .modal-content,
 #caption {
 
