@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,600,700,800&display=swap');
 
 /*Los estilos de body son para acomodar el documento completo. Margin, es para que no genero un margen automático.*/
 body {
     margin: 0 auto;
     margin-top: 2%;
     font-family: 'Be Vietnam', sans-serif;
+    
 }
 
 /*Aquí le decimos al primer contenedor que use todo el ancho de la pantalla y en un 10% de su alto.*/
@@ -73,7 +74,7 @@ li a:hover:not(.active) {
 
 /*con el width ajustamos el ancho y le damos un poco de margen para que quede todo centrado. El display es la forma en que se distribuyen las imágenes y flex es una propiedad que las hace ser flexibles*/
 #portafolio {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -83,9 +84,9 @@ li a:hover:not(.active) {
 
 /*Aquí ajustamos cantidad de columnas con el porcentaje*/
 .column {
-    flex: 25%;
-    max-width: 23%;
-    padding: 0 1%;
+    flex: 32%;
+    max-width: 33%;
+    padding: 0 3px;
 }
 
 .column img {
@@ -202,12 +203,17 @@ li a:hover:not(.active) {
     float: left;
     width: 30%;
     margin-left: 5%;
-    margin-top: 0;
+    margin-top:5px;
 }
 
 /*Los font-weight son para darle peso a la tipografía. En GoogleFonts sale el peso en número al lado de su correspondiente peso textual. Por ejemplo Extrabold 800*/
 h2 {
     font-weight: 800;
+    
+}
+
+p {
+    font-size: 14px;
 }
 
 /*interlineado*/
@@ -257,6 +263,7 @@ input[type=submit]:hover {
 /*El color para cada título del formulario*/
 #nombre-c {
     color: #E75151;
+    font-weight: 600;
 }
 
 #correo-c {
