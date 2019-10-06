@@ -1,82 +1,201 @@
 <html>
-    <head>
-            <meta charset="UTF-8">
-            <title>Chicoquin</title>
-            <link rel="stylesheet" type="text/css" href="estilos.css">
 
-    </head>
-    <body>
-        <div id="container">
-            
-                    <a id="logo" href="index.html"><img src="img/logo.png"></img></a></li>
-              
-                    <ul>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="about.html">Sobre mí</a></li>
-                        <li><a class="active" href="index.html">Portafolio</a></li>
-                        
-                    </ul>
+<head>
+    <meta charset="UTF-8">
+    <title>Chicoquin</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 
-                </div>
+</head>
 
+<body>
+    <div id="container">
 
-                    <!--Contenido específico-->
-                    <!--Esta galería la saqué de aquí https://www.w3schools.com/css/css_image_gallery.asp-->
-                    <!--lo que hace esta galería es linkear foto por foto, respondiendo a los estilos responsive y gallery. Esto se hubiera podido hacer mucho más fácil con Bootstrap y Javascript pero me enteré muy tarde.-->
-                    <div id="portafolio">
+        <a id="logo" href="index.html"><img src="img/logo.png"></img></a></li>
 
-                    <div class="responsive">
-                        <div class="gallery">
-                            <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-                        </div>
-                    </div>
-                          
-                          
-                    <div class="responsive">
-                        <div class="gallery">
-                            <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="600" height="400">
-                          </div>
-                    </div>
-                          
-                    <div class="responsive">
-                        <div class="gallery">
-                            <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Northern Lights" width="600" height="400">
-                        </div>
-                    </div>
-                          
-                    <div class="responsive">
-                        <div class="gallery">
-                            <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Mountains" width="600" height="400">
-                        </div>
-                    </div>
-                     <!--estos divs vacíos son para acomodar el contenido y que este no se desarme-->     
-                          <div class="clearfix"></div>
-                          
-                          <div style="padding:6px;">
+        <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a class="active" href="index.html">Portafolio</a></li>
 
-                    </div>
+        </ul>
 
-                    
+    </div>
 
 
+    <!--Contenido específico-->
+    <!--Esta galería la saqué de aquí https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp-->
+    <!--portafolio es el contenedor de cada columna. Dependiendo de la cantidad de columnas que haga, después en el css ajusto el porcentaje que usan de la pantalla-->
+    <div id="portafolio">
+        <div class="column">
 
-                    <div class="footer">
-                            <img src="img/separador.png">
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <a class="abajo" href="https://instagram.com/chicoquin"><img src="img/ig.png" alt=""></a>
-                            <a class="abajo" href="https://chicoquin.tumblr.com/"><img src="img/tumblr.png" alt=""></a>
-                            <a class="abajo" href="https://behance.net/chicoquin"><img src="img/behance.png" alt=""></a>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <a href="https://instagram.com/"><img src="img/logo.png" alt=""></a>
-                            
-                    </div>
-            
-    </body>
+            <img src="img/portafolio/app-mario-1.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/app-mario2.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/app-mario-mano.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/auto-filito-1.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+                <img src="img/portafolio/teclub-2.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+        </div>
+        <div class="column">
+
+            <img src="img/portafolio/auto-filito-2.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/chiquillasslider2.png" style="max-width:100%;cursor:pointer"
+                onclick="onClick(this)" class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/fruts-arnold.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/gorro-filito.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+                <img src="img/portafolio/posterduoc_mockup.png" style="max-width:100%;cursor:pointer"
+                onclick="onClick(this)" class="modal-hover-opacity">
+
+                <img src="img/portafolio/mundo-museo.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+                
+
+        </div>
+        <div class="column">
+
+            <img src="img/portafolio/logo-mockup.tif.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/packaging-polera.tif.png" style="max-width:100%;cursor:pointer"
+                onclick="onClick(this)" class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/papeleria mockup.tif.png" style="max-width:100%;cursor:pointer"
+                onclick="onClick(this)" class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/totebag.tif.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+                
+
+                <img src="img/portafolio/teclub-3.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+
+                <img src="img/portafolio/teclub-7.png" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
+                class="modal-hover-opacity">
+        
+        </div>
+        <div class="column">
+
+            <img src="img/portafolio/libreta-ladispute.png" style="max-width:100%;cursor:pointer"
+                onclick="onClick(this)" class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/libreta-ladispute-2.png" style="max-width:100%;cursor:pointer"
+                onclick="onClick(this)" class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/morrissey-portada.png" style="max-width:100%;cursor:pointer"
+                onclick="onClick(this)" class="modal-hover-opacity">
+
+
+            <img src="img/portafolio/morrissey-interior.png" style="max-width:100%;cursor:pointer"
+                onclick="onClick(this)" class="modal-hover-opacity">
+
+                <img src="img/portafolio/morrissey-interior2.png" style="max-width:100%;cursor:pointer"
+                onclick="onClick(this)" class="modal-hover-opacity">
+
+        </div>
+    
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+            <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="modal-content">
+                <img id="img01" style="max-width:100%">
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!--
+        <div class="responsive">
+            <div class="gallery">
+                <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="600" height="400">
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Northern Lights" width="600"
+                    height="400">
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Mountains" width="600" height="400">
+            </div>
+        </div> -->
+    <!--estos divs vacíos son para acomodar el contenido y que este no se desarme-->
+    <!--
+        <div class="clearfix"></div>
+
+        <div style="padding:6px;">
+
+        </div>-->
+
+
+
+
+
+    <div class="footer">
+        <img src="img/separador.png">
+        <br>
+        <br>
+        <br>
+        <br>
+        <a class="abajo" href="https://instagram.com/chicoquin"><img src="img/ig.png" alt=""></a>
+        <a class="abajo" href="https://chicoquin.tumblr.com/"><img src="img/tumblr.png" alt=""></a>
+        <a class="abajo" href="https://behance.net/chicoquin"><img src="img/behance.png" alt=""></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://instagram.com/"><img src="img/logo.png" alt=""></a>
+
+    </div>
+
+</body>
+
 </html>
+
+<script>
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+    }
+</script>
